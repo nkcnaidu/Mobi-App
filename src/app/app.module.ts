@@ -4,7 +4,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { User } from '../providers/user';
-
+import {LandingPage} from '../pages/landing/landing';
 
 
 @NgModule({
@@ -12,6 +12,7 @@ import { User } from '../providers/user';
     MyApp,
     HomePage,
     SignupPage,
+    LandingPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,6 +22,7 @@ import { User } from '../providers/user';
     MyApp,
     HomePage,
     SignupPage,
+    LandingPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},User]
 })
