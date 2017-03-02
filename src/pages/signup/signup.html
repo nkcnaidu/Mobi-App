@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Create an Account</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-item>
+    <ion-label>First Name</ion-label>
+    <ion-input type="text" [(ngModel)]="user.firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Last Name</ion-label>
+    <ion-input type="text" [(ngModel)]="user.lastname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date of Brith</ion-label>
+    <ion-datetime displayFormat="DD MMM YYYY" pickerFormat="DD MMM YYYY" [(ngModel)]="user.dateofbirth"></ion-datetime>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mobile Number</ion-label>
+    <ion-input type="Mobile" [(ngModel)]="user.mobile"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Employee ID</ion-label>
+    <ion-input type="Employee ID" [(ngModel)]="user.employeeID"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  	<ion-label>Team</ion-label>
+  	<ion-input type="Team"[(ngModel)]="user.team"></ion-input>
+  </ion-item>
+  	
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Confirm Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.confirm_password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button full color="primary" (click)="signup()">
+  Create an Account
+</button>
+<p style="color:blue" class="text-center"> Have an Account? <span (click)="gotoLogin()">Login Here</span></p>
+</ion-content>
