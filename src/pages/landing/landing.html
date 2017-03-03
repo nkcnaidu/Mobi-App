@@ -7,10 +7,13 @@
 
 <ion-content padding>
 	<h1 class="text-center"> Welcome to NapTap</h1>
-	<img src="assets/logo.png" width="150" height="150" style="margin-left:30%;margin-top:50%">
-
-	<button ion-button round style="position:absolute;bottom:10%;left:30%" (click)="navRegister()">Get Started</button>
+	<img src="assets/logo.png" width="150" height="150" style="margin-left:27%;margin-top:50%">
+		<div class="button-group"  style="margin-top:19%">
+			<p class="text-center"><button ion-button round (click)="navRegister('register')">Get Started</button></p>
+			<p class="text-center" color="primary"> Have an account? </p>
+			<p class="text-center"><ion-icon name="arrow-dropdown-circle" class="bounce" style="font-size: 2.5em;" color="primary"></ion-icon></p>
+		</div>
 </ion-content>
 <ion-footer>
-	<button ion-button block (click)="navRegister()">Login</button>
+	<button ion-button block (click)="navRegister('login')">Login</button>
 </ion-footer>

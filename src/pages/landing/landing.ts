@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
+import { HomePage } from '../home/home';
+
 /*
   Generated class for the Landing page.
 
@@ -19,9 +21,15 @@ export class LandingPage {
     console.log('ionViewDidLoad LandingPage');
   }
 
-  navRegister()
+  navRegister(page)
   {
-  	this.navCtrl.push(SignupPage);
+    if(page=='register'){
+  	  this.navCtrl.push(SignupPage);
+    }
+    else{
+      this.navCtrl.push(HomePage);
+    }
+
   }
 
 }
