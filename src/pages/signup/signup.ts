@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {HomePage} from '../home/home';
 import { User } from '../../providers/user';
+import {ProfilePage} from '../profile/profile';
 
 
 /*
@@ -25,6 +26,6 @@ export class SignupPage {
 
   signup()
   {
-    console.log(this.userService.printUser(this.user));
+    this.navCtrl.push(ProfilePage);
   }
 }

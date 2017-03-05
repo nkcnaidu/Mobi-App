@@ -5,7 +5,8 @@ import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { User } from '../providers/user';
 import {LandingPage} from '../pages/landing/landing';
-
+import {ProfilePage} from '../pages/profile/profile';
+import { ChartboardPage} from '../pages/chartboard/chartboard';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,8 @@ import {LandingPage} from '../pages/landing/landing';
     HomePage,
     SignupPage,
     LandingPage,
+    ProfilePage,
+    ChartboardPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,6 +26,8 @@ import {LandingPage} from '../pages/landing/landing';
     HomePage,
     SignupPage,
     LandingPage,
+    ProfilePage,
+    ChartboardPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},User]
 })
