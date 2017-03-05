@@ -23,12 +23,6 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
-  gotoLogin()
-  {
-  	this.navCtrl.push(HomePage);
-  }
-
-
   signup()
   {
     console.log(this.userService.printUser(this.user));
