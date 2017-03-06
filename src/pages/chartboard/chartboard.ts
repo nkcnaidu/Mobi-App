@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {ChatsPage} from '../chats/chats';
+import {TeamsPage} from '../teams/teams';
+import {GroupsPage} from '../groups/groups';
 
 /*
   Generated class for the Chartboard page.
@@ -12,7 +15,9 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'chartboard.html'
 })
 export class ChartboardPage {
-
+  tab1Root = ChatsPage;
+  tab2Root = TeamsPage;
+  tab3Root = GroupsPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {

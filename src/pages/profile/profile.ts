@@ -22,7 +22,7 @@ export class ProfilePage {
 
   completeProfile()
   {
-  	this.navCtrl.push(ChartboardPage);
+  	this.navCtrl.setRoot(ChartboardPage);
   }
 
 }

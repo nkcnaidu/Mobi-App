@@ -6,13 +6,19 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>chartboard</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>NapTap</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+	<ion-tabs>
+	  <ion-tab [root]="tab1Root" tabIcon="chatbubbles"></ion-tab>
+	  <ion-tab [root]="tab2Root" tabIcon="contacts"></ion-tab>
+	  <ion-tab [root]="tab3Root" tabIcon="people">Test</ion-tab>
+	</ion-tabs>
 
 </ion-content>

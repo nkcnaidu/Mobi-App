@@ -10,7 +10,7 @@ import { ChartboardPage} from '../pages/chartboard/chartboard';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = ProfilePage;
+  rootPage = LandingPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
