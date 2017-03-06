@@ -36,9 +36,12 @@
 	  <ion-item>
 	    <ion-label>DOB</ion-label>
   		<ion-datetime displayFormat="DD MMM YYYY" [(ngModel)]="user.dob"></ion-datetime>
+  		
 
 	  </ion-item>
-	  <ion-item  style="text-align:center;margin-top:10%">
+	  <p class="text-center" style="margin-top:16.5%"><ion-icon name="arrow-dropdown-circle" class="bounce" style="font-size: 2.5em;" color="primary"></ion-icon></p>
+
+	  <ion-item  style="text-align:center;margin-top:12%">
 	  <button ion-button color="primary" (click)="completeProfile()" small>
 		  Submit
 	  </button>
