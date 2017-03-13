@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { LandingPage } from '../pages/landing/landing';
-import {ProfilePage} from '../pages/profile/profile';
+import { ProfilePage } from '../pages/profile/profile';
 import { ChartboardPage} from '../pages/chartboard/chartboard';
+import { Chats } from '../Pages/chats/chats';
+import { Teams } from '../Pages/teams/teams';
+import { Groups } from '../Pages/groups/groups';
 
 
 @Component({

@@ -10,7 +10,7 @@ import { ChartboardPage} from '../pages/chartboard/chartboard';
 import {ChatsPage} from '../pages/chats/chats';
 import {TeamsPage} from '../pages/teams/teams';
 import {GroupsPage} from '../pages/groups/groups';
-
+import {ChatwindowPage} from '../pages/chatwindow/chatwindow';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import {GroupsPage} from '../pages/groups/groups';
     ChatsPage,
     TeamsPage,
     GroupsPage,
+    ChatwindowPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -38,6 +39,7 @@ import {GroupsPage} from '../pages/groups/groups';
     ChatsPage,
     TeamsPage,
     GroupsPage,
+    ChatwindowPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},User]
 })
